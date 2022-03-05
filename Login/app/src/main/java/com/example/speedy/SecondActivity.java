@@ -1,8 +1,10 @@
-package com.example.login;
+package com.example.speedy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.speedy.R;
 
 public class SecondActivity extends AppCompatActivity {
 

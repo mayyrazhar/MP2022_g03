@@ -1,4 +1,4 @@
-package com.example.login;
+package com.example.speedy;
 
 import org.junit.Test;
 
