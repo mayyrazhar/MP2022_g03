@@ -10,13 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Speedy">
         <activity
-            android:name="com.example.speedy.RegistrationActivity"
+            android:name=".PasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.speedy.SecondActivity"
+            android:name=".RegistrationActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.speedy.MainActivity"
+            android:name=".SecondActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
