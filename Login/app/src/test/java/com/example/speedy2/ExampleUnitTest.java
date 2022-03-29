@@ -1,4 +1,4 @@
-package com.example.speedy;
+package com.example.speedy2;
 
 import org.junit.Test;
 

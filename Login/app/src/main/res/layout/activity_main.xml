@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.speedy.MainActivity">
+    tools:context="com.example.speedy2.MainActivity">
 
     <EditText
         android:id="@+id/etName"

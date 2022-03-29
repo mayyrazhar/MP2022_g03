@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "772079826356",
-    "project_id": "speedy-93863",
-    "storage_bucket": "speedy-93863.appspot.com"
+    "project_number": "857176698489",
+    "firebase_url": "https://speedy-2-e54d3-default-rtdb.firebaseio.com",
+    "project_id": "speedy-2-e54d3",
+    "storage_bucket": "speedy-2-e54d3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:772079826356:android:8b3e35f8da456c858a6ee1",
+        "mobilesdk_app_id": "1:857176698489:android:5ad2ab2885de9199edeea8",
         "android_client_info": {
-          "package_name": "com.example.speedy"
+          "package_name": "com.example.speedy2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "772079826356-3c8kapcbfj83dvfjdhg4u62j7es7sqoa.apps.googleusercontent.com",
+          "client_id": "857176698489-eom5k3ej25k7f3n3g705je176ps39b8q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDl3qMg9fcy8b50mgZJAVeIWcPIkeMYXks"
+          "current_key": "AIzaSyCHuV0PpBok6qUVTB6oLY9OYUtkTUaRr6Y"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "772079826356-3c8kapcbfj83dvfjdhg4u62j7es7sqoa.apps.googleusercontent.com",
+              "client_id": "857176698489-eom5k3ej25k7f3n3g705je176ps39b8q.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
