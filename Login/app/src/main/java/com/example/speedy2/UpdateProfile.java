@@ -3,13 +3,11 @@ package com.example.speedy2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -19,32 +17,24 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import java.net.HttpCookie;
+public class UpdateProfile extends AppCompatActivity {
 
-public class ProfileActivity extends AppCompatActivity {
-
-    private ImageView profilePics;
-    private TextView profileName, profileAge, profileEmail;
-    private Button profileUpdate, changePassword;
+    private EditText newUserName, newUserEmail, newUserAge;
+    private Button save;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profile);
+        setContentView(R.layout.activity_update_profile);
 
-        profilePics = findViewById(R.id.ivProfilePic);
-        profileName = findViewById(R.id.tvProfileName);
-        profileAge  = findViewById(R.id.tvProfileAge);
-        profileEmail= findViewById(R.id.tvProfileEmail);
-        profileUpdate = findViewById(R.id.btnProfileUpdate);
-        changePassword = findViewById(R.id.btnChangePassword);
+        newUserName = findViewById(R.id.etNameUpdate);
+        newUserEmail= findViewById(R.id.etEmailUpdate);
+        newUserAge  = findViewById(R.id.etAgeUpdate);
+        save        = findViewById(R.id.btnSave);
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -55,31 +45,35 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 UserProfile userProfile = snapshot.getValue(UserProfile.class);
-                profileName.setText("Name: " + userProfile.getName());
-                profileAge.setText("Age: " + userProfile.getAge());
-                profileEmail.setText("Email: " + userProfile.getEmail());
+                newUserName.setText(userProfile.getName());
+                newUserAge.setText(userProfile.getAge());
+                newUserEmail.setText(userProfile.getEmail());
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(ProfileActivity.this, error.getCode(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(UpdateProfile.this, error.getCode(), Toast.LENGTH_SHORT).show();
 
             }
         });
 
-        profileUpdate.setOnClickListener(new View.OnClickListener() {
+        save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this, UpdateProfile.class));
+                String name = newUserName.getText().toString();
+                String age = newUserAge.getText().toString();
+                String email = newUserEmail.getText().toString();
+
+                UserProfile userProfile = new UserProfile(age, email, name);
+
+                databaseReference.setValue(userProfile);
+
+                finish();
+
             }
         });
 
-        changePassword.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ProfileActivity.this, UpdatePassword.class));
-            }
-        });
+
     }
 
     @Override
