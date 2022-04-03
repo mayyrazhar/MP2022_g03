@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Speedy2">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".PasswordActivity"
             android:exported="false" />
         <activity
