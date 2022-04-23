@@ -5,4 +5,24 @@
     <string name="payment">Payment</string>
     <string name="message">Message</string>
     <string name="profile">Profile</string>
+
+    <string-array name="TypeOfCarArray">
+        <item>SUV</item>
+        <item>CUV</item>
+        <item>SEDAN</item>
+        <item>PICKUP</item>
+    </string-array>
+
+    <string-array name="NameOfCarArray">
+        <item>FORTUNER</item>
+        <item>X70</item>
+        <item>MYVI</item>
+        <item>VIVA</item>
+        <item>BEZZA</item>
+        <item>PERSONA</item>
+        <item>NISSAN FRONTIER</item>
+        <item>FORD RANGER</item>
+    </string-array>
+
+
 </resources>
