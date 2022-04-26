@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,7 +34,6 @@ public class confirmActivity extends AppCompatActivity {
     private TextView duration;
     private TextView displayprice;
     private Button confirm;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -96,7 +96,8 @@ public class confirmActivity extends AppCompatActivity {
         confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseReference = firebaseDatabase.getReference("BOOKING INFO").child(firebaseAuth.getUid());
+
+                databaseReference = firebaseDatabase.getReference("CARS BOOKING INFO").child(firebaseAuth.getUid());
                 bookingDatabase bd = new bookingDatabase(ifullname,iic,iphonenumber,icartype,icarname,ireservedate,iduration,iprice);
 
                 databaseReference.setValue(bd);

@@ -52,22 +52,7 @@
 
     <Spinner
         android:id="@+id/spinner_carType"
-        android:layout_width="196dp"
-        android:layout_height="32dp"
-
-
-        android:drawSelectorOnTop="true"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_duration"
-        app:layout_constraintVertical_bias="0.162" />
-
-    <Spinner
-        android:id="@+id/spinner_carName"
-        android:layout_width="196dp"
+        android:layout_width="324dp"
         android:layout_height="35dp"
 
 
@@ -75,10 +60,25 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.204"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_duration"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Spinner
+        android:id="@+id/spinner_Duration"
+        android:layout_width="324dp"
+        android:layout_height="35dp"
+
+
+        android:drawSelectorOnTop="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner_carType"
-        app:layout_constraintVertical_bias="0.119" />
+        app:layout_constraintVertical_bias="0.121" />
 
     <Button
         android:id="@+id/btn_book"
@@ -89,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_carName"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Duration"
         app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton

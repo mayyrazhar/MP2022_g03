@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -19,10 +21,14 @@ public class scooterBooking extends AppCompatActivity {
     private EditText ic;
     private EditText phoneNumber;
     private ImageButton reserveDate;
-    private EditText duration;
+    private Spinner duration;
     private Button book;
     private TextView resDate;
 
+    String [] LengthOfDuration;
+    
+    int indexDuration;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,10 +38,16 @@ public class scooterBooking extends AppCompatActivity {
         ic = findViewById (R.id.et_ic);
         phoneNumber = findViewById (R.id.et_phoneNumber);
         reserveDate = findViewById (R.id.ib_reserveDate);
-        duration = findViewById (R.id.et_duration);
+        duration = findViewById (R.id.spinner_Duration);
         book = findViewById (R.id.btn_book);
         resDate = findViewById(R.id.tv_resDate);
 
+        LengthOfDuration = getResources().getStringArray(R.array.LengthOfDurationArray);
+
+        ArrayAdapter<String> adapterLengthOfDuration = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,LengthOfDuration);
+
+        duration.setAdapter(adapterLengthOfDuration);
+        
         reserveDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -46,6 +58,19 @@ public class scooterBooking extends AppCompatActivity {
         ireservedate = getIntent().getStringExtra("keydate");
         resDate.setText(ireservedate);
 
+        duration.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                indexDuration = adapterView.getSelectedItemPosition();
+                iduration = LengthOfDuration [indexDuration];
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
         book.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,8 +78,6 @@ public class scooterBooking extends AppCompatActivity {
                 ifullname = FullName.getText().toString();
                 iic = ic.getText().toString();
                 iphonenumber = phoneNumber.getText().toString();
-
-                iduration = duration.getText().toString();
 
                 Intent intent = new Intent(scooterBooking.this,confirmActivity_Scooter.class);
 

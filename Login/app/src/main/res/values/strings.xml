@@ -7,6 +7,7 @@
     <string name="profile">Profile</string>
 
     <string-array name="TypeOfCarArray">
+        <item> ** CHOOSE YOUR CAR CATEGORY ** </item>
         <item>SUV</item>
         <item>CUV</item>
         <item>SEDAN</item>
@@ -14,6 +15,7 @@
     </string-array>
 
     <string-array name="NameOfCarArray">
+        <item> ** CHOOSE YOUR CAR **</item>
         <item>FORTUNER</item>
         <item>X70</item>
         <item>MYVI</item>
@@ -22,6 +24,15 @@
         <item>PERSONA</item>
         <item>NISSAN FRONTIER</item>
         <item>FORD RANGER</item>
+    </string-array>
+
+    <string-array name="LengthOfDurationArray">
+        <item> ** CHOOSE DURATION **</item>
+        <item>15 MINUTES</item>
+        <item>30 MINUTES</item>
+        <item>1 HOURS</item>
+        <item>1 HOURS 15 MINUTES</item>
+        <item>1 HOURS 30 MINUTES</item>
     </string-array>
 
 

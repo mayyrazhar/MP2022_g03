@@ -44,7 +44,7 @@ public class carBooking extends AppCompatActivity {
         ic = findViewById (R.id.et_ic);
         phoneNumber = findViewById (R.id.et_phoneNumber);
         carType = findViewById (R.id.spinner_carType);
-        carName = findViewById (R.id.spinner_carName);
+        carName = findViewById (R.id.spinner_Duration);
         reserveDate = findViewById (R.id.ib_reserveDate);
         duration = findViewById (R.id.et_duration);
         book = findViewById (R.id.btn_book);
@@ -58,7 +58,6 @@ public class carBooking extends AppCompatActivity {
 
         carType.setAdapter(adapterTypeOfCar);
         carName.setAdapter(adapterNameOfCar);
-
 
         reserveDate.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,9 +95,6 @@ public class carBooking extends AppCompatActivity {
             }
         });
 
-
-
-
         book.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -117,6 +113,7 @@ public class carBooking extends AppCompatActivity {
                 intent.putExtra("keycarname",icarname);
                 intent.putExtra("keyreservedate",ireservedate);
                 intent.putExtra("keyduration",iduration);
+
 
                 startActivity(intent);
 

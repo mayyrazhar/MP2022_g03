@@ -20,7 +20,6 @@ public class confirmActivity_Scooter extends AppCompatActivity {
     private FirebaseDatabase firebaseDatabase;
     private DatabaseReference databaseReference;
 
-    int nDuration;
     double price;
 
     private TextView FullName;
@@ -57,11 +56,20 @@ public class confirmActivity_Scooter extends AppCompatActivity {
         ic.setText("IC. NO : " + iic);
         phoneNumber.setText("PHONE NUMBER : " + iphonenumber);
         reserveDate.setText("RESERVATION DATE : " + ireservedate);
-        duration.setText("RESERVATION DURATION : " + iduration+" Hour(s)");
+        duration.setText("RESERVATION DURATION : " + iduration);
 
-        nDuration = Integer.parseInt(iduration);
 
-        price = nDuration*30;
+        if (iduration.equals("15 MINUTES")){
+            price = 7.50;
+        }else if (iduration.equals("30 MINUTES")){
+            price = 15;
+        }else if (iduration.equals("1 HOURS")){
+            price = 30;
+        }else if (iduration.equals("1 HOURS 15 MINUTES")){
+            price = 37.5;
+        }else if (iduration.equals("1 HOURS 30 MINUTES")){
+            price = 45;
+        }
 
         iprice = String.format("%.2f", price);
         displayprice.setText("RM "+iprice);
