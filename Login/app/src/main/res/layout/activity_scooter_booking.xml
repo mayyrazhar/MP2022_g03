@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".carBooking">
-
+    tools:context=".scooterBooking">
 
     <EditText
         android:id="@+id/et_FullName"
@@ -50,36 +49,6 @@
         app:layout_constraintTop_toBottomOf="@+id/et_ic"
         app:layout_constraintVertical_bias="0.058" />
 
-    <Spinner
-        android:id="@+id/spinner_carType"
-        android:layout_width="196dp"
-        android:layout_height="32dp"
-
-
-        android:drawSelectorOnTop="true"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_duration"
-        app:layout_constraintVertical_bias="0.162" />
-
-    <Spinner
-        android:id="@+id/spinner_carName"
-        android:layout_width="196dp"
-        android:layout_height="35dp"
-
-
-        android:drawSelectorOnTop="true"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.204"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_carType"
-        app:layout_constraintVertical_bias="0.119" />
-
     <Button
         android:id="@+id/btn_book"
         android:layout_width="wrap_content"
@@ -89,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_carName"
+        app:layout_constraintTop_toBottomOf="@+id/et_duration"
         app:layout_constraintVertical_bias="0.38" />
 
     <ImageButton
@@ -122,7 +91,7 @@
         android:layout_width="324dp"
         android:layout_height="45dp"
         android:ems="10"
-        android:hint="Duration of Rental (Days)"
+        android:hint="Duration of Rental (Hours)"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

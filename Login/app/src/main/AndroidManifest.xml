@@ -13,6 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Speedy2">
         <activity
+            android:name=".popupReserveDate_Scooter"
+            android:exported="false" />
+        <activity
+            android:name=".confirmActivity_Scooter"
+            android:exported="false" />
+        <activity
+            android:name=".scooterBooking"
+            android:exported="false" />
+        <activity
             android:name=".popupReserveDate"
             android:exported="false" />
         <activity

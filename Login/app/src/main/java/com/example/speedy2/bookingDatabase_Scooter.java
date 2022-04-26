@@ -1,15 +1,13 @@
 package com.example.speedy2;
 
-public class bookingDatabase {
+public class bookingDatabase_Scooter {
 
-    public String fullname,ic,phonenumber,cartype,carname,reservedate,duration,price;
+    public String fullname, ic, phonenumber,reservedate, duration, price;
 
-    public bookingDatabase(String fullname, String ic, String phonenumber, String cartype, String carname, String reservedate, String duration, String price) {
+    public bookingDatabase_Scooter(String fullname, String ic, String phonenumber, String reservedate, String duration, String price) {
         this.fullname = fullname;
         this.ic = ic;
         this.phonenumber = phonenumber;
-        this.cartype = cartype;
-        this.carname = carname;
         this.reservedate = reservedate;
         this.duration = duration;
         this.price = price;
@@ -27,14 +25,6 @@ public class bookingDatabase {
         return phonenumber;
     }
 
-    public String getCartype() {
-        return cartype;
-    }
-
-    public String getCarname() {
-        return carname;
-    }
-
     public String getReservedate() {
         return reservedate;
     }
@@ -47,12 +37,6 @@ public class bookingDatabase {
         return price;
     }
 
-
-
-
-
-
-
     public void setFullname(String fullname) {
         this.fullname = fullname;
     }
@@ -63,14 +47,6 @@ public class bookingDatabase {
 
     public void setPhonenumber(String phonenumber) {
         this.phonenumber = phonenumber;
-    }
-
-    public void setCartype(String cartype) {
-        this.cartype = cartype;
-    }
-
-    public void setCarname(String carname) {
-        this.carname = carname;
     }
 
     public void setReservedate(String reservedate) {

@@ -34,8 +34,6 @@ public class carBooking extends AppCompatActivity {
     int indexName;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -107,9 +105,6 @@ public class carBooking extends AppCompatActivity {
                 ifullname = FullName.getText().toString();
                 iic = ic.getText().toString();
                 iphonenumber = phoneNumber.getText().toString();
-               // icartype = carType.getText().toString();
-                //icarname = carName.getText().toString();
-                //ireservedate = reserveDate.getText().toString();
 
                 iduration = duration.getText().toString();
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".confirmActivity">
+    tools:context=".confirmActivity_Scooter">
 
     <TextView
         android:id="@+id/tv_fullname"
@@ -18,18 +18,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.088" />
-
-    <TextView
-        android:id="@+id/tv_carType"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_phoneNumber"
-        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/tv_ic"
@@ -57,18 +45,6 @@
         app:layout_constraintVertical_bias="0.021" />
 
     <TextView
-        android:id="@+id/tv_carName"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_carType"
-        app:layout_constraintVertical_bias="0.026" />
-
-    <TextView
         android:id="@+id/tv_reserveDate"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
@@ -77,8 +53,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_carName"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toBottomOf="@+id/tv_phoneNumber"
+        app:layout_constraintVertical_bias="0.031" />
 
     <TextView
         android:id="@+id/tv_returnDate"

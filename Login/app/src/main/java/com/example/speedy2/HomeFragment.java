@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 public class HomeFragment extends Fragment {
 
     private ImageButton buttonCar;
+    private ImageButton buttonScooter;
 
     @Nullable
     @Override
@@ -23,11 +24,19 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
         buttonCar = view.findViewById(R.id.btn_car);
+        buttonScooter = view.findViewById(R.id.btn_scooter);
 
         buttonCar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(),carBooking.class));
+            }
+        });
+
+        buttonScooter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(),scooterBooking.class));
             }
         });
 
