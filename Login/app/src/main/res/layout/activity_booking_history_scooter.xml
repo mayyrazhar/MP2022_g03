@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingHistory">
+    tools:context=".BookingHistory_Scooter">
 
     <TextView
         android:id="@+id/tvh_fullname"
@@ -17,32 +17,19 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088" />
-
-    <TextView
-        android:id="@+id/tvh_carType"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvh_phoneNumber"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/tvh_ic"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="520dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvh_fullname"
-        app:layout_constraintVertical_bias="0.126" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/tvh_phoneNumber"
@@ -54,18 +41,6 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvh_ic"
-        app:layout_constraintVertical_bias="0.021" />
-
-    <TextView
-        android:id="@+id/tvh_carName"
-        android:layout_width="324dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvh_carType"
         app:layout_constraintVertical_bias="0.026" />
 
     <TextView
@@ -77,8 +52,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvh_carName"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toBottomOf="@+id/tvh_phoneNumber"
+        app:layout_constraintVertical_bias="0.033" />
 
     <TextView
         android:id="@+id/tvh_returnDate"
@@ -90,7 +65,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvh_reserveDate"
-        app:layout_constraintVertical_bias="0.032" />
+        app:layout_constraintVertical_bias="0.033" />
 
     <Button
         android:id="@+id/btnh_back"
@@ -102,7 +77,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvh_price"
-        app:layout_constraintVertical_bias="0.362" />
+        app:layout_constraintVertical_bias="0.296" />
 
     <TextView
         android:id="@+id/tvh_price"
@@ -114,6 +89,6 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvh_returnDate"
-        app:layout_constraintVertical_bias="0.035" />
+        app:layout_constraintVertical_bias="0.038" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

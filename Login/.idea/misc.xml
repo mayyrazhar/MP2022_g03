@@ -4,11 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_booking.xml" value="0.27447916666666666" />
-        <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_booking_history.xml" value="0.2" />
+        <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_booking_history.xml" value="0.4" />
+        <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_booking_history_scooter.xml" value="0.27447916666666666" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_car_booking.xml" value="0.264" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_confirm.xml" value="0.4" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_confirm_scooter.xml" value="0.27447916666666666" />
-        <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_popup_reserve_date.xml" value="0.27447916666666666" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_popup_reserve_date_scooter.xml" value="0.27447916666666666" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_profile.xml" value="0.27447916666666666" />
@@ -17,6 +18,7 @@
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_second.xml" value="0.27447916666666666" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_splash_screen.xml" value="0.27447916666666666" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_splash_screen_confirmed.xml" value="0.1" />
+        <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_activity.xml" value="0.27447916666666666" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_main.xml" value="0.25" />

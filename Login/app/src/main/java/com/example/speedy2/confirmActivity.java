@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -40,15 +38,15 @@ public class confirmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm);
 
-        FullName = findViewById (R.id.tv_fullname);
-        ic = findViewById (R.id.tv_ic);
-        phoneNumber = findViewById (R.id.tv_phoneNumber);
-        carType = findViewById (R.id.tv_carType);
-        carName = findViewById (R.id.tv_carName);
-        reserveDate = findViewById (R.id.tv_reserveDate);
-        duration = findViewById (R.id.tv_returnDate);
-        confirm = findViewById (R.id.btn_confirm);
-        displayprice = findViewById(R.id.tv_price);
+        FullName = findViewById (R.id.tvh_fullname);
+        ic = findViewById (R.id.tvh_ic);
+        phoneNumber = findViewById (R.id.tvh_phoneNumber);
+        carType = findViewById (R.id.tvh_carType);
+        carName = findViewById (R.id.tvh_carName);
+        reserveDate = findViewById (R.id.tvh_reserveDate);
+        duration = findViewById (R.id.tvh_returnDate);
+        confirm = findViewById (R.id.btnh_back);
+        displayprice = findViewById(R.id.tvh_price);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -98,7 +96,7 @@ public class confirmActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 databaseReference = firebaseDatabase.getReference("CARS BOOKING INFO").child(firebaseAuth.getUid());
-                bookingDatabase bd = new bookingDatabase(ifullname,iic,iphonenumber,icartype,icarname,ireservedate,iduration,iprice);
+                BookingDatabase bd = new BookingDatabase(ifullname,iic,iphonenumber,icartype,icarname,ireservedate,iduration,iprice);
 
                 databaseReference.setValue(bd);
 

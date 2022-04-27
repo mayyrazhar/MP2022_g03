@@ -13,6 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Speedy2">
         <activity
+            android:name=".BookingHistory_Scooter"
+            android:exported="false" />
+        <activity
+            android:name=".BookingHistory"
+            android:exported="false" />
+        <activity
             android:name=".popupReserveDate_Scooter"
             android:exported="false" />
         <activity

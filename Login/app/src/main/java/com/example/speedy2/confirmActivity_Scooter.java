@@ -35,13 +35,13 @@ public class confirmActivity_Scooter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_confirm_scooter);
 
-        FullName = findViewById (R.id.tv_fullname);
-        ic = findViewById (R.id.tv_ic);
-        phoneNumber = findViewById (R.id.tv_phoneNumber);
-        reserveDate = findViewById (R.id.tv_reserveDate);
-        duration = findViewById (R.id.tv_returnDate);
-        confirm = findViewById (R.id.btn_confirm);
-        displayprice = findViewById(R.id.tv_price);
+        FullName = findViewById (R.id.tvh_fullname);
+        ic = findViewById (R.id.tvh_ic);
+        phoneNumber = findViewById (R.id.tvh_phoneNumber);
+        reserveDate = findViewById (R.id.tvh_reserveDate);
+        duration = findViewById (R.id.tvh_returnDate);
+        confirm = findViewById (R.id.btnh_back);
+        displayprice = findViewById(R.id.tvh_price);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -78,7 +78,7 @@ public class confirmActivity_Scooter extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 databaseReference = firebaseDatabase.getReference("SCOOTER BOOKING INFO").child(firebaseAuth.getUid());
-                bookingDatabase_Scooter bd = new bookingDatabase_Scooter(ifullname,iic,iphonenumber,ireservedate,iduration,iprice);
+                BookingDatabaseScooter bd = new BookingDatabaseScooter(ifullname,iic,iphonenumber,ireservedate,iduration,iprice);
 
                 databaseReference.setValue(bd);
 

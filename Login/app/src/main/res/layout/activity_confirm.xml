@@ -7,7 +7,7 @@
     tools:context=".confirmActivity">
 
     <TextView
-        android:id="@+id/tv_fullname"
+        android:id="@+id/tvh_fullname"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.088" />
 
     <TextView
-        android:id="@+id/tv_carType"
+        android:id="@+id/tvh_carType"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -28,11 +28,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_phoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_phoneNumber"
         app:layout_constraintVertical_bias="0.03" />
 
     <TextView
-        android:id="@+id/tv_ic"
+        android:id="@+id/tvh_ic"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="520dp"
@@ -41,11 +41,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_fullname"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_fullname"
         app:layout_constraintVertical_bias="0.126" />
 
     <TextView
-        android:id="@+id/tv_phoneNumber"
+        android:id="@+id/tvh_phoneNumber"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -53,11 +53,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_ic"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_ic"
         app:layout_constraintVertical_bias="0.021" />
 
     <TextView
-        android:id="@+id/tv_carName"
+        android:id="@+id/tvh_carName"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -65,11 +65,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_carType"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_carType"
         app:layout_constraintVertical_bias="0.026" />
 
     <TextView
-        android:id="@+id/tv_reserveDate"
+        android:id="@+id/tvh_reserveDate"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -77,11 +77,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_carName"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_carName"
         app:layout_constraintVertical_bias="0.03" />
 
     <TextView
-        android:id="@+id/tv_returnDate"
+        android:id="@+id/tvh_returnDate"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -89,11 +89,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_reserveDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_reserveDate"
         app:layout_constraintVertical_bias="0.032" />
 
     <Button
-        android:id="@+id/btn_confirm"
+        android:id="@+id/btnh_back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Confirm"
@@ -101,11 +101,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_price"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_price"
         app:layout_constraintVertical_bias="0.362" />
 
     <TextView
-        android:id="@+id/tv_price"
+        android:id="@+id/tvh_price"
         android:layout_width="324dp"
         android:layout_height="wrap_content"
         android:text="TextView"
@@ -113,7 +113,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_returnDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvh_returnDate"
         app:layout_constraintVertical_bias="0.035" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
