@@ -21,13 +21,28 @@
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_activity.xml" value="0.27447916666666666" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/UTM STUFF/MP/MASTER PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_profile.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_booking_history.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_booking_history_scooter.xml" value="0.14175724637681159" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_car_booking.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_confirm.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_confirm_scooter.xml" value="0.33" />
         <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_password.xml" value="0.22" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_popup_reserve_date.xml" value="0.33" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_popup_reserve_date_scooter.xml" value="0.33" />
         <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_registration.xml" value="0.33" />
-        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_second.xml" value="0.16530797101449277" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_scooter_booking.xml" value="0.17346014492753623" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_second.xml" value="0.33" />
         <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_splash_screen.xml" value="0.17617753623188406" />
         <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_update_password.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/activity_update_profile.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_activity.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_message.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_payment.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/LENOVO/Documents/MP SEM 4/PROJECT/MP2022_g03/Login/app/src/main/res/menu/bottom_navigation.xml" value="0.209375" />
         <entry key="..\:/Users/admin/Documents/ijemer/UTM/YEAR 2/SEM 2/Mobile Programming/Project/MP2022_g03/Login/app/src/main/res/layout/activity_main.xml" value="0.371875" />
         <entry key="..\:/Users/admin/Documents/ijemer/UTM/YEAR 2/SEM 2/Mobile Programming/Project/MP2022_g03/Login/app/src/main/res/layout/activity_profile.xml" value="0.2667572463768116" />
         <entry key="..\:/Users/admin/Documents/ijemer/UTM/YEAR 2/SEM 2/Mobile Programming/Project/MP2022_g03/Login/app/src/main/res/layout/activity_second.xml" value="0.371875" />

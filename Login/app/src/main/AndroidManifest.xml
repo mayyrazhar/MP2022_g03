@@ -44,9 +44,6 @@
             android:name=".UpdateProfile"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
-            android:exported="false" />
-        <activity
             android:name=".PasswordActivity"
             android:exported="false" />
         <activity
