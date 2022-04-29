@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/nav_activity"
-        android:icon="@drawable/ic_home_black_24dp"
+        android:icon="@drawable/icon_order_history"
         android:title="@string/activity" />
 
     <item
@@ -18,8 +18,8 @@
 
     <item
         android:id="@+id/nav_message"
-        android:icon="@drawable/ic_baseline_message_24"
-        android:title="@string/message" />
+        android:icon="@drawable/icon_notification"
+        android:title="@string/Notification" />
 
     <item
         android:id="@+id/nav_profile"

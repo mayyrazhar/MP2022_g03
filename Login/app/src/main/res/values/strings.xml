@@ -3,7 +3,7 @@
     <string name="home">Home</string>
     <string name="activity">Activity</string>
     <string name="payment">Payment</string>
-    <string name="message">Message</string>
+    <string name="Notification">Notification</string>
     <string name="profile">Profile</string>
 
     <string-array name="TypeOfCarArray">
