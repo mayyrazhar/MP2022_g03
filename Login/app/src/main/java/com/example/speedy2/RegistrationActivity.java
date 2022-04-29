@@ -96,11 +96,11 @@ public class RegistrationActivity extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if (task.isSuccessful()){
-                                //sendEmailVerification();
-                                sendUserData();
-                                Toast.makeText(RegistrationActivity.this,"Successfully Registered, Upload Complete!", Toast.LENGTH_SHORT).show();
-                                finish();
-                                startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
+                                sendEmailVerification();
+                              //ndUserData();
+                               // Toast.makeText(RegistrationActivity.this,"Successfully Registered, Upload Complete!", Toast.LENGTH_SHORT).show();
+                              //  finish();
+                              //  startActivity(new Intent(RegistrationActivity.this, MainActivity.class));
                             } else{
                                 Toast.makeText(RegistrationActivity.this,"Registration Failed", Toast.LENGTH_SHORT).show();
                             }
