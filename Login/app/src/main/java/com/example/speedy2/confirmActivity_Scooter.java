@@ -1,7 +1,11 @@
 package com.example.speedy2;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -82,10 +86,27 @@ public class confirmActivity_Scooter extends AppCompatActivity {
 
                 databaseReference.setValue(bd);
 
+                addNotification();
                 finish();
                 startActivity(new Intent(confirmActivity_Scooter.this,SecondActivity.class));
             }
         });
 
+    }
+
+    private void addNotification(){
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this)
+                .setSmallIcon(android.R.drawable.star_on)                          //Display Icon kecik
+                .setContentTitle("Scooter Booking")                         //Title Notification
+                .setContentText("Your booking has been process!");          //Text Message Notification
+
+        //Bila click Notification, pergi ke mana
+        Intent notificationIntent = new Intent(this, SecondActivity.class);
+
+        //Call Notification
+        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+        builder.setContentIntent(contentIntent);
+        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+        manager.notify(0, builder.build());
     }
 }
