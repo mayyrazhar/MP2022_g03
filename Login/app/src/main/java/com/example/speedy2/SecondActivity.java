@@ -6,11 +6,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.content.Intent;
+
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
 
 import com.example.speedy2.databinding.ActivitySecondBinding;
@@ -42,9 +39,9 @@ public class SecondActivity extends AppCompatActivity {
                 case R.id.nav_payment:
                     replaceFragment(new PaymentFragment());
                     break;
-                case R.id.nav_message:
-                    replaceFragment(new MessageFragment());
-                    break;
+                //case R.id.nav_message:
+                //    replaceFragment(new MessageFragment());
+                //    break;
                 case R.id.nav_profile:
                     replaceFragment(new ProfileFragment());
                     break;
@@ -53,7 +50,6 @@ public class SecondActivity extends AppCompatActivity {
         });
 
         firebaseAuth = FirebaseAuth.getInstance();
-
     }
 
     private void replaceFragment(Fragment fragment){

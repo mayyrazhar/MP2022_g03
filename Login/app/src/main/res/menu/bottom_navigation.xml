@@ -17,11 +17,6 @@
         android:title="@string/payment" />
 
     <item
-        android:id="@+id/nav_message"
-        android:icon="@drawable/icon_notification"
-        android:title="@string/Notification" />
-
-    <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="@string/profile" />
